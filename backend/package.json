@@ -1,0 +1,35 @@
+{
+  "name": "proshop-backend-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server",
+    "data:import": "node seeder",
+    "data:destroy": "node seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidkever/proshop-backend-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kidkever/proshop-backend-api/issues"
+  },
+  "homepage": "https://github.com/kidkever/proshop-backend-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.8",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
