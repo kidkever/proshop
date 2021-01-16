@@ -61,16 +61,15 @@ const ProductEditScreen = ({ match, history }) => {
     try {
       const config = {
         headers: {
-          "Content-type": "multipart/form-data",
+          "Content-Type": "multipart/form-data",
         },
       };
-      const { data } = await axios.post(
+      const { data: filename } = await axios.post(
         "http://localhost:3001/api/upload",
         formData,
         config
       );
-
-      setImage(data);
+      setImage(`/uploads/${filename}`);
       setUploading(false);
     } catch (error) {
       console.error(error);
