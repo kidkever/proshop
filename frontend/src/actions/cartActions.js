@@ -7,7 +7,9 @@ import {
 } from "../constants/cartConstants";
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
-  const { data } = await axios.get(`http://localhost:3001/api/products/${id}`);
+  const { data } = await axios.get(
+    `https://mazen-proshop.herokuapp.com/api/products/${id}`
+  );
   dispatch({
     type: CART_ADD_ITEM,
     payload: {

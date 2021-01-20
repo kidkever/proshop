@@ -52,7 +52,7 @@ const OrderScreen = ({ match, history }) => {
 
     const addPayPalScript = async () => {
       const { data: clientId } = await axios.get(
-        "http://localhost:3001/api/config/paypal"
+        "https://mazen-proshop.herokuapp.com/api/config/paypal"
       );
       const script = document.createElement("script");
       script.type = "text/javascript";

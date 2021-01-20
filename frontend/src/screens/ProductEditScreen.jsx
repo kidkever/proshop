@@ -65,7 +65,7 @@ const ProductEditScreen = ({ match, history }) => {
         },
       };
       const { data: filename } = await axios.post(
-        "http://localhost:3001/api/upload",
+        "https://mazen-proshop.herokuapp.com/api/upload",
         formData,
         config
       );
