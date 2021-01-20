@@ -1,5 +1,6 @@
 import path from "path";
 import express from "express";
+import morgan from "morgan";
 import dotenv from "dotenv";
 import cors from "cors";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
@@ -13,6 +14,10 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 dotenv.config();
 connectDB();
 const app = express();
+
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
+}
 
 app.use(cors());
 app.use(express.json());

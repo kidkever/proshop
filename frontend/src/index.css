@@ -1,3 +1,62 @@
 main {
   min-height: 80vh;
 }
+
+/* carousel */
+/* .carousel {
+  min-height: 400px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.carousel a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel a:hover,
+.carousel a:focus {
+  text-decoration: none;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+} */
+
+.carousel {
+  min-height: 400px;
+  margin-bottom: 50px;
+}
+
+.carousel-inner a {
+  display: flex;
+}
+
+.carousel a:hover,
+.carousel a:focus {
+  text-decoration: none;
+}
+
+.carousel-caption {
+  max-width: 325px;
+  margin-left: 25px;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  position: inherit !important;
+}
+
+.carousel-caption h3 {
+  color: #fff;
+  line-height: 2rem;
+}
+
+.carousel img {
+  display: flex;
+}
